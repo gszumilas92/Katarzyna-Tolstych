@@ -21,9 +21,10 @@ body {
     /* overflow-x: hidden; */
 }
 
-ul {
+ul,li {
   list-style-type: none;
 }
+
 
 .clearfix:after {
      visibility: hidden;
@@ -84,7 +85,7 @@ h4{
     font-size: 130%;
     font-weight: 400;
     margin-bottom: 20px;
-    margin-top: 80px;
+    margin-top: 60px;
 }
 
 
@@ -135,28 +136,47 @@ p {
 .col ul:last-child{}
 
 /* ---------------------------------------------------------- */
-/* LINKS */
+/* NAVIGATION + LINKS */
 /* ---------------------------------------------------------- */
 
+nav {
+    display: flex;
+    background-color: rgba(0, 0, 17, 0.5);
+}
+
+.main-nav {
+    display: flex;
+    height: 10vh;
+    justify-content:space-around;
+    align-items: center;
+    font-size: 120%;
+    font-weight: 400;
+}
+
+.sticky-nav {
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    top: 0px;
+    height: 70px;
+    font-size: 80%;
+    align-content: flex-start;
+}
 
 .main-nav li a:link,
 .main-nav li a:visited {
-    color: #f8f8f8;
     text-decoration: none;
-    padding-bottom: 1px;
-    border-bottom: 2px solid transparent;
-    -webkit-transition: border-bottom 0.2s, color 0.2s;
-    transition: border-bottom 0.3s, color 0.3s, font-size 0.3s, margin-left 0.3s;
-    margin: 0 35px;
+    font-size: 110%;
+    color: #fff;
+    padding: 27px 50px;
+    transition: background-color 0.3s;
 }
 
+.sticky-nav li a:link,
+.sticky-nav li a:visited {padding: 25px 50px;}
+
 .main-nav li a:hover,
-.main-nav li a:active {
-    margin-left: 11px;
-    font-size: 130%;
-    color: #fff;
-    border-bottom: 1px solid #cf6d17;
-}
+.main-nav li a:active {background-color: #4082bb;}
 
 
 /* ---------------------------------------------------------- */
@@ -212,22 +232,6 @@ header{
     color: #fff;
     height: 100vh;
 }
- 
-nav {
-    display: flex;
-    justify-content: center;
-    background-color: rgba(0, 0, 17, 0.5);
-}
-
-.main-nav {
-    display: flex;
-    height: 10vh;
-    width: 70%;
-    justify-content:space-between;
-    align-items: center;
-    font-size: 120%;
-    font-weight: 400;
-}
 
 .gabinet {
     display: flex;
@@ -253,35 +257,8 @@ nav {
     font-weight: 300;
 }
 
-.header-box a {
-    
-}
-
-.life-sentence {
-    
-}
-
 /* ---------------------------------------------------------- */
-/* BACKGROUNDS */ 
-/* ---------------------------------------------------------- */
-
-.section-landscape{
-    background-image: url(img/landscape5.jpg);
-    background-size: cover;
-    background-position: center;
-    /*background-attachment: fixed;*/
-    height: 75vh;
-    color: #fff;
-    position: relative;
-    
-    /*
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(img/landscape6.jpeg);
-    */
-    
-    
-}
-/* ---------------------------------------------------------- */
-/* WEBSITE IMAGES */ 
+/* SECTION EXPERIENCE */ 
 /* ---------------------------------------------------------- */
 
 .section-experience img {
@@ -305,7 +282,25 @@ nav {
     flex-direction: column;     /* stack flex items vertically */
     justify-content: center;    /* center items vertically, in this case */
     align-items: center;
-    height: 110vh;
+}
+
+.certificate {
+    background-color: rgba(0, 0, 17, 0.5); 
+    width: 100vw;
+    height: 12vh;
+    position: fixed;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    bottom: 0;
+    z-index: 1;
+}
+
+
+
+.certificate img {
+    height: 90px;
+    width: 90px;
 }
 
 /* ---------------------------------------------------------- */
@@ -440,8 +435,7 @@ table tr:last-child td:last-child {
     border: 2px solid #bbb;
     border-radius: 10px;
 }
-
-.google-map {
+ {
     display: flex;
     justify-content: center;
 }

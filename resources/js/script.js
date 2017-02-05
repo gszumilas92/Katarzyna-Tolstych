@@ -61,6 +61,28 @@ img.onclick = function(){
         
     });
 
+/* for sticky certificates */
+	$('.js--section-experience').waypoint(function(direction) {
+		if (direction == "down") {
+			$('navbot').addClass('certificate');
+		} else {
+			$('navbot').removeClass('certificate');
+		}
+			}, {
+  		offset: '420px'
+  });    
+    
+/* for sticky navigation */
+	$('.js--section-experience').waypoint(function(direction) {
+		if (direction == "down") {
+			$('nav').addClass('sticky-nav');
+		} else {
+			$('nav').removeClass('sticky-nav');		}
+			}, {
+  		offset: '0px'
+  });    
+    
+    
 /*FINISH OF THE DOCUMENT!!!*/
 });
 
