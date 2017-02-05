@@ -48,15 +48,11 @@ ul {
 /*1140px
   1600px*/
 
-section {
-    padding: 80px 0;
-}
-
 .box {
     padding: 1%;
 }
 
-
+section {margin-bottom: 80px;}
 
 
 /* ---------------------------------------------------------- */
@@ -70,28 +66,15 @@ h4{font-weight: 300;}
 
 h4{text-transform: uppercase;}
 
-h1,
+
 h4{
     margin-top: 0;
     text-align: center;
 }
 
-h1{
-    padding-top: 50px;
-    font-size: 230%;
-    width: 50%;
-    margin: 0 auto;
-}
-
-
-h2{
-    margin-top: 0;
-    margin-bottom: 0;
-    font-size: 150%;
-    padding-top: 10px;
-}
-
-.h3 {
+h1{font-size: 270%;margin: 20px 0;}
+h2{font-size: 180%;}
+h3 {
     font-size: 110%;
     font-style: italic;
     text-transform: capitalize;
@@ -101,6 +84,7 @@ h4{
     font-size: 130%;
     font-weight: 400;
     margin-bottom: 20px;
+    margin-top: 80px;
 }
 
 
@@ -114,16 +98,23 @@ h4:after {
     margin-top: 17px;
 }
 
-h5{
-    text-transform: uppercase;
-    padding-top: 25px;
+h5 {
     padding-bottom: 15px;
-    font-size: 90%;
     word-spacing: 7px;
     border-bottom: 2px solid #9a9a9a;
-    margin-bottom: 10px;
+    margin: 30px 0 10px 0;
+    font-size: 90%;
+    text-transform: uppercase;
 }
 
+h6 {
+    padding-bottom: 15px;
+    word-spacing: 7px;
+    text-align: center;
+    margin: 30px 0 10px 0;
+    font-size: 90%;
+    text-transform: uppercase;
+}
 
 
 /* ---------------------------------------------------------- */
@@ -133,16 +124,15 @@ h5{
 .col ul,
 p { 
     font-size: 16px;
-    font-family: "Libre Baskerville", serif;
+    font-family: "Lato", serif;
     line-height: 30px;
     text-shadow: 0 1px 1px #fff;
+    font-weight: 400;
 }
 
 .col ul {margin-left: 30px;}
 .col ul:first-child,
 .col ul:last-child{}
-
-.section-about p {padding-top: 25px;}
 
 /* ---------------------------------------------------------- */
 /* LINKS */
@@ -215,41 +205,53 @@ input[type=submit] {
 /* HEADER */ 
 /* ---------------------------------------------------------- */
 
-
-.photo-box {
-    display:flex;
-    height: 200px;
-    width: 22%;
+header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/nowygabinet.png);
+    background-size:cover;
+    background-position: center;
+    color: #fff;
+    height: 100vh;
 }
-
+ 
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 17, 0.5);
+}
 
 .main-nav {
     display: flex;
-    height: 90px;
-    width: 50%;
-    justify-content: center;
-    margin: 0 auto;
-    align-items: flex-end;
+    height: 10vh;
+    width: 70%;
+    justify-content:space-between;
+    align-items: center;
     font-size: 120%;
     font-weight: 400;
 }
-/*
-justify-content
-align-items
-flex-direction
-order
-align-self
-flex-wrap
-flex-flow
-align-content
 
-<h2>mgr Katarzyna Tołstych</h2>
-                    <ul class="life-sentence">
-                        <!-- Wprowadzić tutaj kilka sentencji!!!!! -->
-                        <h3> „Posiadasz dziś wszystko to, co jest potrzebne, by dzień jutrzejszy uczynić
-                            lepszym. Nic jednak nie wydarzy się samo.&quot;</h3>
-                    </ul>
-*/
+.gabinet {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 55vh;
+    width: 50%;
+    margin-top: 15vh;
+}
+
+.gabinet img {
+    height: 50%;
+    border: 3px solid rgba(255, 255, 255, 0.7);
+}
+
+.gabinet p {
+    letter-spacing:3px;
+    font-size: 90%;
+    padding-top: 30px;
+    text-align: center;
+    width: 60%;
+    font-weight: 300;
+}
 
 .header-box a {
     
@@ -262,14 +264,6 @@ align-content
 /* ---------------------------------------------------------- */
 /* BACKGROUNDS */ 
 /* ---------------------------------------------------------- */
-
-header{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/gabinet.jpg);
-    background-size:cover;
-    background-position: fixed;
-    background-attachment: fixed;
-    color: #fff;
-}
 
 .section-landscape{
     background-image: url(img/landscape5.jpg);
@@ -311,7 +305,7 @@ header{
     flex-direction: column;     /* stack flex items vertically */
     justify-content: center;    /* center items vertically, in this case */
     align-items: center;
-    height: 500px;
+    height: 110vh;
 }
 
 /* ---------------------------------------------------------- */
@@ -376,8 +370,6 @@ header{
 /* RATES */ 
 /* ---------------------------------------------------------- */
 
-.section-contact {padding-top: 50px;}
-
 .section-contact h4 {margin-bottom: 45px;}
 
 table {
@@ -430,15 +422,12 @@ table tr:last-child td:last-child {
 
 .section-contact .row:last-child .span-2-of-3{width:64%}
 
-
-/*.section-contact {
+.section-offer {
     background-color: #f5f5f5;
-    padding-top: 50px;
+    height: 90vh;
+    margin:0;
 }
-*/
-
-.section-offer {background-color: #f5f5f5;}
-.section-slider {padding:0;}
+.section-slider {margin:0;}
 
 /* ---------------------------------------------------------- */
 /* Contact Form */ 
@@ -452,8 +441,14 @@ table tr:last-child td:last-child {
     border-radius: 10px;
 }
 
+.google-map {
+    display: flex;
+    justify-content: center;
+}
+
 .map {
-    height:300px;
+    height:30vh;
+    width: 50vw;
 }
 
 .form-box {
@@ -497,44 +492,55 @@ option {
 
 option:selected{color: #969696}
 
-.section-contact .span-1-of-2 {margin-bottom : 60px;}
-
-
 /* ---------------------------------------------------------- */
 /* FOOTER */ 
 /* ---------------------------------------------------------- */
 
 
-footer {    
-    height: 300px;
+footer {   
+    height: 30vh;
     background-color: #333;
     color: #fff;
+}
+
+footer p {
+    letter-spacing: 1px;
+    font-weight: 300;
     text-align: center;
-    position: relative;
 }
 
-.social-icons {
-    position: absolute;
-    top:50%;
-    transform: translate(-50%, 0);
-    display: inline-block;
-    font-size: 35px;
-    letter-spacing: 50px;
-}
 
-.counter {float:left}
 
 footer i {
-    
-    
-    color:blue
+    font-size: 130%;
+    float:left;
+    margin-left: 50px;
 }
 
+.info {
+    display: flex;
+    justify-content:space-around;
+    height: 60%;
+    max-width:85vw;
+    margin: 0 auto;
+}
 
+.info div {min-width: 15vw;}
+.info div:first-child p{
+    text-align:left;
+    margin-left: 70px;
+}
 
+.first-element{order: -1;}
 
-
-
-
-
+/* FLEXTUTORIAL
+justify-content
+align-items
+flex-direction
+order
+align-self
+flex-wrap
+flex-flow
+align-content
+*/
 
