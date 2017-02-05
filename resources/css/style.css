@@ -206,7 +206,7 @@ input[type=submit] {
 /* ---------------------------------------------------------- */
 
 header{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/nowygabinet.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/gabinet.jpg);
     background-size:cover;
     background-position: center;
     color: #fff;
