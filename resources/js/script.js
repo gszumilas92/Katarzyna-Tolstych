@@ -68,11 +68,18 @@ img.onclick = function(){
 		} else {
 			$('navbot').removeClass('certificate');
 		}
+			});    
+ 	$('.js--section-silder').waypoint(function(direction) {
+		if (direction == "down") {
+			$('navbot').removeClass('certificate');
+		} else {
+			
+		}
 			}, {
   		offset: '420px'
-  });    
+  });       
     
-/* for sticky navigation */
+ /* for sticky navigation */
 	$('.js--section-experience').waypoint(function(direction) {
 		if (direction == "down") {
 			$('nav').addClass('sticky-nav');
@@ -81,7 +88,9 @@ img.onclick = function(){
 			}, {
   		offset: '0px'
   });    
+       
     
+
     
 /*FINISH OF THE DOCUMENT!!!*/
 });

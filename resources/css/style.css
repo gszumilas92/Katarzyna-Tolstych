@@ -42,7 +42,7 @@ ul,li {
 /* ---------------------------------------------------------- */
 
 .row {
-    max-width: 1340px;
+    max-width: 80vw;
     margin: 0 auto;
 }
 
@@ -125,9 +125,8 @@ h6 {
 .col ul,
 p { 
     font-size: 16px;
-    font-family: "Lato", serif;
+    font-family: "Lato", sans-serif;
     line-height: 30px;
-    text-shadow: 0 1px 1px #fff;
     font-weight: 400;
 }
 
@@ -142,10 +141,10 @@ p {
 nav {
     display: flex;
     background-color: rgba(0, 0, 17, 0.5);
+    width: 100vw;
 }
 
-.main-nav {
-    display: flex;
+.main-nav{
     height: 10vh;
     justify-content:space-around;
     align-items: center;
@@ -156,11 +155,9 @@ nav {
 .sticky-nav {
     position: fixed;
     z-index: 9999;
-    width: 100%;
     top: 0px;
-    height: 70px;
+    height: 7vh;
     font-size: 80%;
-    align-content: flex-start;
 }
 
 .main-nav li a:link,
@@ -172,12 +169,12 @@ nav {
     transition: background-color 0.3s;
 }
 
-.sticky-nav li a:link,
-.sticky-nav li a:visited {padding: 25px 50px;}
 
 .main-nav li a:hover,
 .main-nav li a:active {background-color: #4082bb;}
 
+.sticky-nav li a:link,
+.sticky-nav li a:visited {padding: 22px 50px;}
 
 /* ---------------------------------------------------------- */
 /* BUTTONS */
@@ -370,7 +367,6 @@ header{
 table {
     border-collapse: separate;
     border-spacing: 0;
-    text-align: center;
     font-weight: 400;
     width:100%;
 }
@@ -388,23 +384,15 @@ table tr th {
     background: #eee;
     border-top: 2px solid #bbb;
 }
-
-
 table tr:first-child th:first-child {
     border-top-left-radius: 10px;
 }
-
-
 table tr:first-child th:last-child {
     border-top-right-radius: 10px;
 }
-
-
 table tr:last-child td:first-child {
     border-bottom-left-radius: 10px;
 }
-
-
 table tr:last-child td:last-child {
     border-bottom-right-radius: 10px;
 }
@@ -419,8 +407,8 @@ table tr:last-child td:last-child {
 
 .section-offer {
     background-color: #f5f5f5;
-    height: 90vh;
     margin:0;
+    padding-bottom: 60px;
 }
 .section-slider {margin:0;}
 
@@ -435,14 +423,11 @@ table tr:last-child td:last-child {
     border: 2px solid #bbb;
     border-radius: 10px;
 }
- {
-    display: flex;
-    justify-content: center;
-}
 
 .map {
     height:30vh;
     width: 50vw;
+    margin: 0 auto;
 }
 
 .form-box {
