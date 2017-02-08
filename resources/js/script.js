@@ -79,17 +79,17 @@ img.onclick = function(){
   		offset: '420px'
   });       
     
- /* for sticky navigation */
+ /* for sticky navigation  */   
 	$('.js--section-experience').waypoint(function(direction) {
 		if (direction == "down") {
 			$('nav').addClass('sticky-nav');
 		} else {
 			$('nav').removeClass('sticky-nav');		}
 			}, {
-  		offset: '0px'
+  		offset: '70px'
   });    
        
-    
+
 
     
 /*FINISH OF THE DOCUMENT!!!*/
