@@ -61,7 +61,7 @@ img.onclick = function(){
         
     });
 
-/* for sticky certificates */
+/* for sticky certificates
 	$('.js--section-experience').waypoint(function(direction) {
 		if (direction == "down") {
 			$('navbot').addClass('certificate');
@@ -78,7 +78,7 @@ img.onclick = function(){
 			}, {
   		offset: '420px'
   });       
-    
+     */
  /* for sticky navigation  */   
 	$('.js--section-experience').waypoint(function(direction) {
 		if (direction == "down") {
