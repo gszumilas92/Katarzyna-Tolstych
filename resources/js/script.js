@@ -17,7 +17,7 @@ $(document).ready(function() {
         offset: '50%'
     });
     
-/*MODAL IMAGES JS*/    
+/*MODAL IMAGES JS
 var modal = document.getElementById('modal');
 var modalImg = document.getElementById("img1");
 var span = document.getElementsByClassName("close")[0];    
@@ -33,7 +33,7 @@ img.onclick = function(){
 span.onclick = function() { 
   modal.style.display = "none";
 }   
-/*MODAL IMAGES JS*/   
+  
 
 
 var img = document.getElementById('id2');
@@ -42,6 +42,7 @@ img.onclick = function(){
     modal.style.display = "block";
     modalImg.src = this.src;
 }
+MODAL IMAGES JS*/
 
 /*GOOGLE MAPS*/
 

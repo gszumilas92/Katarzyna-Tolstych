@@ -13,7 +13,7 @@
 html,
 body {
     background-color: #fff;
-    color: #555;
+    color: #000;
     font-family: 'Lato', 'Arial', sans-serif;
     font-weight: 300;
     font-size: 20px;
@@ -124,13 +124,12 @@ h6 {
 p { 
     font-size: 16px;
     font-family: "Lato", sans-serif;
-    line-height: 30px;
+    line-height: 25px;
     font-weight: 400;
 }
 
 .col ul {margin-left: 30px;}
-.col ul:first-child,
-.col ul:last-child{}
+
 
 /* ---------------------------------------------------------- */
 /* NAVIGATION + LINKS */
@@ -296,7 +295,7 @@ header{
 }
 
 .about div:first-child{min-width: 35vh;}
-.about div:first-child p{}
+
 .about div:last-child p:first-child{font-size: 110%;letter-spacing: 1px;line-height: 40px;
 }
 
@@ -507,8 +506,6 @@ footer p {
     font-weight: 300;
     text-align: center;
 }
-
-
 
 footer i {
     font-size: 130%;
